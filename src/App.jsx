@@ -18,12 +18,6 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <><Navbar /><BlogHome /> </>,
-    children: [
-      {
-        path: "mapfunction",
-        element: <><MapFunction /></>
-      }
-    ]
   },
   {
     path: "/blog",
