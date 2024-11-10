@@ -1,0 +1,9 @@
+body {
+    margin-bottom: 20px;
+}
+
+.active {
+    background-color: rgb(235, 0, 184);
+    border-radius: 12px;
+    color:white !important;
+}
