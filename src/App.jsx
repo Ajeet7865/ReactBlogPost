@@ -59,40 +59,10 @@ const router = createBrowserRouter([
   },
 ]);
 
-// Or Other Approach
-
-const routerfromElement = createBrowserRouter(
-  createRoutesFromElements(
-    <Route path='/' element={<Layout />}>
-      <Route path='about' element={<h1>Child Layout 1</h1>} />
-      <Route path='contact' element={<h1>Child Layout 2</h1>} />
-    </Route>
-  )
-)
-
 function App() {
 
   return (
 
-    // This is Old Approach 
-    // <Router>
-    //   <Navbar />
-    //   <Routes>
-    //     <Route path="/" element={<Home />} />
-    //     <Route path="/card" element={<CardList />} />
-    //     <Route path="/usestatehook" element={<UseStateHook />} />
-    //     <Route path="/statelifting" element={<StateLifting />} />
-    //     <Route path="/dynamiccolor" element={<DynamicStyleColor />} />
-    //     <Route path="/conditionalrendering" element={<ConditionalRendering />} />
-    //     <Route path="/eventhandling" element={<EventHandling />} />
-    //     <Route path="/gallery" element={<Gallery />} />
-    //     <Route path="/useeffecthook" element={<UseEffectHook />} />
-    //     <Route path="/useeffecttimer" element={<UseEffectHookTimer />} />
-    //     <Route path="/useeffectdatafetch" element={<UseEffectDataFetch />} />
-    //     <Route path="/usecontexthook" element={<UseContextHook />} />
-    //     <Route path="*" element={<NotFound />} />
-    //   </Routes>
-    // </Router>
     <RouterProvider router={router} >
     </RouterProvider>
   )
