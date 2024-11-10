@@ -17,7 +17,7 @@ import BlogHome from './Components/Projects/MegaBlog/Home.jsx'
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <><Navbar /><BlogHome />  </>,
+    element: <><Navbar /><BlogHome /> </>,
     children: [
       {
         path: "mapfunction",
